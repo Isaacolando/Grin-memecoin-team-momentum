@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "GRIN_backend": {
+      "candid": "src/GRIN_backend/GRIN_backend.did",
+      "package": "GRIN_backend",
+      "type": "rust"
+    },
+    "GRIN_frontend": {
+      "dependencies": [
+        "GRIN_backend"
+      ],
+      "source": [
+        "src/GRIN_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
