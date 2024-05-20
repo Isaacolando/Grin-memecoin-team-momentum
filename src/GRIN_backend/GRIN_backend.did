@@ -1,3 +1,6 @@
 service : {
-    "greet": (text) -> (text) query;
+    "init": () -> ();
+    "transfer": (principal, nat64) -> (result<(), text>);
+    "balance_of": (principal) -> (nat64) query;
+    "airdrop": (vec (principal, nat64)) -> (result<(), text>);
 }

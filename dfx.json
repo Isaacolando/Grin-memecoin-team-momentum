@@ -3,7 +3,9 @@
     "GRIN_backend": {
       "candid": "src/GRIN_backend/GRIN_backend.did",
       "package": "GRIN_backend",
-      "type": "rust"
+      "type": "rust",
+      "wasm": "target/wasm32-unknown-unknown/release/GRIN_backend.wasm",
+      "build": "cargo build --target wasm32-unknown-unknown --release"
     },
     "GRIN_frontend": {
       "dependencies": [
